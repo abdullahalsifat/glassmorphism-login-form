@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    background: url("form-html-css-04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .formContent{
+    width: 500px;
+    border: 2px solid #867d7d;
+    padding: 20px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.formContent h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.formContent .inputText{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputText input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.inputText input::placeholder{
+    color: #fff;
+}
+
+.inputText input:focus,
+.inputText input:valid{
+    color: #fff;
+}
+
+.inputText i{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.formContent .rfText{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rfText input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.rfText label{
+    color: #fff;
+}
+
+.rfText a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.rfText a:hover{
+    text-decoration: underline;
+}
+
+.formContent button{
+    margin: 20px 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.formContent .account{
+    text-align: center;
+    color: #fff;
+}
+
+.account span{
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 395px){
+    .rfText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Thank You! */
